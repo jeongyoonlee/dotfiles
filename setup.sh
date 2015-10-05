@@ -1,13 +1,14 @@
-sudo apt-get update
-sudo apt-get install git make python-dateutil python-pip htop bison
+#sudo apt-get update
+#sudo apt-get -y install git
+sudo apt-get -y install make python-dateutil python-pip htop bison
 
 # for numpy, scipy, and sklearn
-sudo apt-get install build-essential python-dev python-setuptools gfortran \
+sudo apt-get -y install build-essential python-dev python-setuptools gfortran \
 libatlas-dev libatlas3gf-base liblapack-dev
 
 # for vowpal wabbit
-sudo apt-get install libboost-program-options-dev libboost-python-dev
-sudo apt-get install zlib1g-dev
+sudo apt-get -y install libboost-program-options-dev libboost-python-dev
+sudo apt-get -y install zlib1g-dev
 
 # setup ipython notebook
 sudo pip install "ipython[all]"
