@@ -11,6 +11,7 @@ sudo apt-get -y install libboost-program-options-dev libboost-python-dev
 sudo apt-get -y install zlib1g-dev
 
 # setup ipython notebook
+sudo pip install awscli
 sudo pip install "ipython[all]"
 sudo pip install pyzmq
 sudo pip install Jinja2
@@ -53,3 +54,6 @@ sudo apt-get update
 
 git clone https://github.com/dmlc/xgboost.git
 cd xgboost; bash build.sh; cd python-package; sudo python setup.py install
+
+git clone https://github.com/jeongyoonlee/Kaggler.git
+cd Kaggler; python setup.py build_ext --inplace; sudo python setup.py install
