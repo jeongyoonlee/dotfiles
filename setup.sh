@@ -30,6 +30,7 @@ sudo pip install pandas
 sudo pip install patsy
 sudo pip install statsmodels
 sudo pip install xlrd
+sudo pip install kaggle-cli
 
 # for R
 # add deb http://cran.stat.ucla.edu/bin/linux/ubuntu trusty/ to /etc/apt/sources.list
