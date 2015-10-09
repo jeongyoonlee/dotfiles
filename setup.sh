@@ -1,6 +1,6 @@
-#sudo apt-get update
 #sudo apt-get -y install git
-sudo apt-get -y install make python-dateutil python-pip htop bison
+sudo apt-get update
+sudo apt-get -y install make htop python-dateutil python-pip bison
 
 # for numpy, scipy, and sklearn
 sudo apt-get -y install build-essential python-dev python-setuptools gfortran \
@@ -34,7 +34,7 @@ sudo pip install kaggle-cli
 
 # for R
 # add deb http://cran.stat.ucla.edu/bin/linux/ubuntu trusty/ to /etc/apt/sources.list
-sudo apt-get update
+# sudo apt-get update
 # if the GPG NO_PUBKEY error message comes up, add the key to apt as follows
 # gpg --keyserver keyserver.ubuntu.com --recv-key [PUBKEY VALUE]
 # gpg -a --export [PUBKEY VALUE] | sudo apt-key add -
