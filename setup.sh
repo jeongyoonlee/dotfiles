@@ -12,7 +12,7 @@ sudo apt-get -y install zlib1g-dev
 
 # setup ipython notebook
 sudo pip install awscli
-sudo pip install "ipython[all]"
+sudo pip install ipython[notebook]
 sudo pip install pyzmq
 sudo pip install Jinja2
 sudo pip install tornado
@@ -31,6 +31,7 @@ sudo pip install patsy
 sudo pip install statsmodels
 sudo pip install xlrd
 sudo pip install kaggle-cli
+sudo pip install cython
 
 # for R
 # add deb http://cran.stat.ucla.edu/bin/linux/ubuntu trusty/ to /etc/apt/sources.list
