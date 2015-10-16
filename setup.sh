@@ -32,6 +32,7 @@ sudo pip install statsmodels
 sudo pip install xlrd
 sudo pip install kaggle-cli
 sudo pip install cython
+sudo pip install joblib
 
 # for R
 # add deb http://cran.stat.ucla.edu/bin/linux/ubuntu trusty/ to /etc/apt/sources.list
@@ -49,10 +50,8 @@ sudo pip install cython
 #sudo apt-get install postgresql-client
 
 # Tools
-#git clone https://github.com/s3tools/s3cmd.git
-#cd s3cmd; sudo python setup.py install; cd ..
-#git clone https://github.com/JohnLangford/vowpal_wabbit.git
-#cd vowpal_wabbit; make; cd ..
+git clone https://github.com/JohnLangford/vowpal_wabbit.git
+cd vowpal_wabbit; make; cd ..
 
 git clone https://github.com/dmlc/xgboost.git
 cd xgboost; bash build.sh; cd python-package; sudo python setup.py install
