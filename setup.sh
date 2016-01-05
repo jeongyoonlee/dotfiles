@@ -8,7 +8,7 @@ libatlas-dev libatlas3gf-base liblapack-dev
 
 # for vowpal wabbit
 sudo apt-get -y install libboost-program-options-dev libboost-python-dev
-sudo apt-get -y install zlib1g-dev
+sudo apt-get -y install zlib1g-dev libxml2-dev libjpeg-dev
 
 # setup ipython notebook
 sudo pip install awscli
@@ -36,6 +36,7 @@ sudo pip install joblib
 
 # for Keras
 sudo pip install git+git://github.com/Theano/Theano.git
+sudo pip install Pillow
 sudo pip install keras
 
 # for R
