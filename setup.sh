@@ -1,5 +1,7 @@
 #sudo apt-get -y install git
 sudo apt-get update
+sudo apt-get -y upgrade
+sudo apt-get -y install linux-image-extra-`uname -r`
 sudo apt-get -y install make htop python-dateutil python-pip bison
 
 # for numpy, scipy, and sklearn
@@ -33,11 +35,6 @@ sudo pip install xlrd
 sudo pip install kaggle-cli
 sudo pip install cython
 sudo pip install joblib
-
-# for Keras
-sudo pip install git+git://github.com/Theano/Theano.git
-sudo pip install Pillow
-sudo pip install keras
 
 # for R
 # add deb http://cran.stat.ucla.edu/bin/linux/ubuntu trusty/ to /etc/apt/sources.list
