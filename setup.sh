@@ -34,6 +34,10 @@ sudo pip install kaggle-cli
 sudo pip install cython
 sudo pip install joblib
 
+# for Keras
+sudo pip install git+git://github.com/Theano/Theano.git
+sudo pip install keras
+
 # for R
 # add deb http://cran.stat.ucla.edu/bin/linux/ubuntu trusty/ to /etc/apt/sources.list
 # sudo apt-get update
