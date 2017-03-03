@@ -20,6 +20,7 @@ sudo pip install -U jupyter
 sudo pip install -U pyzmq
 sudo pip install -U Jinja2
 sudo pip install -U tornado
+sudo pip install -U h5py
 
 # set up ipython notebook server as described in http://ipython.org/ipython-doc/2/notebook/public_server.html
 # ipython profile create nbserver
@@ -60,8 +61,8 @@ git clone https://github.com/JohnLangford/vowpal_wabbit.git
 cd vowpal_wabbit; make; cd ..
 
 cd ~/tools
-git clone https://github.com/dmlc/xgboost.git
-cd xgboost; bash build.sh; cd python-package; sudo python setup.py install
+git clone --recursive https://github.com/dmlc/xgboost.git
+cd xgboost; make -j4; cd python-package; sudo python setup.py install
 
 cd ~/tools
 git clone https://github.com/jeongyoonlee/Kaggler.git
