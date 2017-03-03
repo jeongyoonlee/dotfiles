@@ -14,7 +14,7 @@ sudo apt-get -y install zlib1g-dev libxml2-dev libjpeg-dev
 
 # setup ipython notebook
 sudo pip install awscli
-sudo pip install ipython[notebook]
+sudo pip install jupyter
 sudo pip install pyzmq
 sudo pip install Jinja2
 sudo pip install tornado
@@ -52,11 +52,14 @@ sudo pip install joblib
 #sudo apt-get install postgresql-client
 
 # Tools
+cd ~/tools
 git clone https://github.com/JohnLangford/vowpal_wabbit.git
 cd vowpal_wabbit; make; cd ..
 
+cd ~/tools
 git clone https://github.com/dmlc/xgboost.git
 cd xgboost; bash build.sh; cd python-package; sudo python setup.py install
 
+cd ~/tools
 git clone https://github.com/jeongyoonlee/Kaggler.git
 cd Kaggler; python setup.py build_ext --inplace; sudo python setup.py install
