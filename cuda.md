@@ -1,16 +1,39 @@
-sudo chown ubuntu:ubuntu /mnt
-mkdir -p /mnt/download
-cd /mnt/download
-wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb
-sudo dpkg -i cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb
+# CUDA installation guide: http://docs.nvidia.com/cuda/cuda-installation-guide-linux/#axzz4VZnqTJ2A
+# $ lspci | grep -i nvidia
+# $ uname -m && cat /etc/*release
+# $ gcc --version
 
-sudo apt-get update
-sudo apt-get install -y cuda
-sudo ldconfig /usr/local/cuda/lib64
+# Install LINUX headers
+sudo apt install linux-headers-$(uname -r)
 
-source /home/ubuntu/dotfiles/.bashrc
+# Download and install CUDA 8.0
+wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
+sudo sh cuda_8.0.61_375.26_linux-run
 
-# for Keras
-sudo pip install git+git://github.com/Theano/Theano.git
-sudo pip install Pillow
+# If the installation fails, remove X lock in /tmp.
+
+# Disable Nouveau if a command below displays anything:
+# $ lsmod | grep nouveau
+#
+# 1. Create a file at /etc/modprobe.d/blacklist-nouveau.conf with the following # contents:
+# blacklist nouveau
+# options nouveau modeset=0
+#
+# 2. Then regenerate the kernel initramfs:
+# $ sudo update-initramfs -u
+
+# Install cuDNN 5.1
+# 1. Download cuDNN from https://developer.nvidia.com/cudnn
+# $ sudo cp include/cudnn.h /usr/local/cuda/include
+# $ sudo cp -P lib64/libcudnn* /usr/local/cuda/lib64/
+# $ sudo chmod a+r /usr/local/cuda/include/cudnn.h
+# $ sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
+
+# Install NVIDIA CUDA Profile Tools
+sudo apt install libcupti-dev
+
+# Install TensorFlow
+sudo pip install -U tensorflow-gpu
+
+# Install Keras
 sudo pip install keras
