@@ -7,8 +7,14 @@
 sudo apt install linux-headers-$(uname -r)
 
 # Download and install CUDA 8.0
+# For GTX 1080 Ti, select No to install NVidia driver 376.
 wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
 sudo sh cuda_8.0.61_375.26_linux-run
+
+# for GTX 1080 Ti, you need to install NVidia driver 381.09 manually
+# sudo add-apt-repository ppa:graphics-drivers/ppa
+# sudo apt update
+# sudo apt -y install nvidia-381
 
 # If the installation fails, remove X lock in /tmp.
 

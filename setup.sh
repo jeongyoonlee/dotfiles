@@ -2,7 +2,7 @@
 sudo apt update
 sudo apt -y upgrade
 sudo apt -y install linux-image-extra-`uname -r`
-sudo apt -y install make htop python-dateutil python-pip bison
+sudo apt -y install make cmake htop python-dateutil python-pip bison
 
 # for numpy, scipy, and sklearn
 sudo apt -y install build-essential python-dev python-setuptools gfortran \
@@ -67,3 +67,12 @@ cd xgboost; make -j4; cd python-package; sudo python setup.py install
 cd ~/tools
 git clone https://github.com/jeongyoonlee/Kaggler.git
 cd Kaggler; python setup.py build_ext --inplace; sudo python setup.py install
+
+cd ~/tools
+git clone --recursive https://github.com/Microsoft/LightGBM
+cd LightGBM
+mkdir build; cd build
+cmake ..
+make -j
+cd ../python-package
+sudo python setup.py install
