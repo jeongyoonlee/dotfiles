@@ -32,18 +32,18 @@ If the installation fails, remove X lock in /tmp.
 $ lsmod | grep nouveau
 ```
 
-*. Create a file at /etc/modprobe.d/blacklist-nouveau.conf with the following # contents:
+Create a file at /etc/modprobe.d/blacklist-nouveau.conf with the following # contents:
 ```
 blacklist nouveau
 options nouveau modeset=0
 ```
-* Then regenerate the kernel initramfs:
+Then regenerate the kernel initramfs:
 ```
 $ sudo update-initramfs -u
 ```
 
 ## Install cuDNN 5.1
-* Download cuDNN from https://developer.nvidia.com/cudnn
+Download cuDNN from https://developer.nvidia.com/cudnn
 ```
 $ sudo cp include/cudnn.h /usr/local/cuda/include
 $ sudo cp -P lib64/libcudnn* /usr/local/cuda/lib64/
