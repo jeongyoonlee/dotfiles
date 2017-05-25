@@ -17,9 +17,6 @@ sudo pip install -U pip
 sudo pip install -U virtualenv
 sudo pip install -U awscli
 sudo pip install -U jupyter
-sudo pip install -U pyzmq
-sudo pip install -U Jinja2
-sudo pip install -U tornado
 sudo pip install -U h5py
 
 # set up ipython notebook server as described in http://ipython.org/ipython-doc/2/notebook/public_server.html
@@ -76,3 +73,6 @@ cmake ..
 make -j
 cd ../python-package
 sudo python setup.py install
+
+# For VIM
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
