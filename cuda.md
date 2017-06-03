@@ -65,3 +65,9 @@ $ sudo pip install -U tensorflow-gpu
 ```
 $ sudo pip install keras
 ```
+
+## Install GpuStat
+```
+$ sudo pip install gpustat
+```
+
