@@ -85,3 +85,7 @@ $ cmake -G "Unix Makefiles" -DCMAKE_CXX_COMPILER=/usr/bin/g++ CMAKE_C_COMPILER=/
 $ make all -j
 $ sudo make install && sudo checkinstall
 ```
+Note that it puts `cv2.so` in `/usr/local/python/2.7/` instead of `/usr/local/lib/python2.7/site-packages`. I moved `cv2.so` to `/usr/local/lib/python2.7/site-packages` and add the directory to `PYTHONPATH` in `.bashrc` as follows:
+```
+export PYTHONPATH=$PYTHONPATH:.:/usr/local/lib/python2.7/site-packages
+```
