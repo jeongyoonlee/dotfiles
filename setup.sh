@@ -55,11 +55,11 @@ sudo pip install -U kaggle-cli
 # Tools
 cd ~/tools
 git clone https://github.com/JohnLangford/vowpal_wabbit.git
-cd vowpal_wabbit; make; cd ..
+cd vowpal_wabbit; make; make test; sudo make install; cd ..
 
 cd ~/tools
 git clone --recursive https://github.com/dmlc/xgboost.git
-cd xgboost; make -j4; cd python-package; sudo python setup.py install
+cd xgboost; make -j; cd python-package; sudo python setup.py install
 
 cd ~/tools
 git clone https://github.com/jeongyoonlee/Kaggler.git
