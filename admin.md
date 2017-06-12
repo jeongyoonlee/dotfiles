@@ -1,7 +1,7 @@
 # Adding a Sudo User
 ```
-# (sudo) adduser username
-# (sudo) usermod -aG sudo username
+$ (sudo) adduser username
+$ (sudo) usermod -aG sudo username
 ```
 
 # SSH Port Forwarding
