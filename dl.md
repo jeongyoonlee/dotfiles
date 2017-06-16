@@ -132,13 +132,11 @@ $ sudo R CMD INSTALL mxnet_current_r.tar.gz
 
 ## Install PyTorch
 ```
-sudo pip install http://download.pytorch.org/whl/cu80/torch-0.1.12.post2-cp27-none-linux_x86_64.whl 
-sudo pip install torchvision
+$ sudo pip install http://download.pytorch.org/whl/cu80/torch-0.1.12.post2-cp27-none-linux_x86_64.whl 
+$ sudo pip install torchvision
 ```
 
 ## Install GpuStat
 ```
 $ sudo pip install gpustat
 ```
-
-
