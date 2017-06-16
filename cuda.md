@@ -56,21 +56,6 @@ $ sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
 $ sudo apt install libcupti-dev
 ```
 
-## Install TensorFlow
-```
-$ sudo pip install -U tensorflow-gpu
-```
-
-## Install Keras
-```
-$ sudo pip install keras
-```
-
-## Install GpuStat
-```
-$ sudo pip install gpustat
-```
-
 ## Install OpenCV2
 From http://leoybkim.com/wiki/installing-opencv-2.4.13-on-ubunto-16.04/
 ```
@@ -89,3 +74,71 @@ Note that it puts `cv2.so` in `/usr/local/python/2.7/` instead of `/usr/local/li
 ```
 export PYTHONPATH=$PYTHONPATH:.:/usr/local/lib/python2.7/site-packages
 ```
+## Install TensorFlow
+```
+$ sudo pip install -U tensorflow-gpu
+```
+
+## Install Keras
+For Python:
+```
+$ sudo pip install keras
+```
+
+For R:
+```
+# From the R console:
+> devtools::install_github("rstudio/keras")
+> library(keras)
+> install_tensorflow(gpu=TRUE)
+```
+
+## Install CNTK
+```
+$ sudo apt -y install openmpi-bin
+$ sudo pip install https://cntk.ai/PythonWheel/GPU-1bit-SGD/cntk-2.0-cp27-cp27mu-linux_x86_64.whl
+$ python -c "import cntk; print(cntk.__version__)"
+$ sudo python -m cntk.sample_installer
+```
+
+## Install MXNet
+For Python:
+```
+$ sudo pip install mxnet-cu80
+$ sudo apt -y install graphviz
+$ sudo pip install graphviz
+```
+
+For R:
+```
+# From the command line:
+$ sudo apt -y install libcurl4-openssl-dev libssl-dev
+
+# From the R console:
+> install.packages('devtools', repo='https://cran.rstudio.com')
+> install.packages('DiagrammeR')
+> install.packages('visNetwork')
+> install.packages('data.table')
+> install.packages('jsonlite')
+> install.packages('stringr')
+
+# From the command line:
+$ git clone --recursive https://github.com/dmlc/mxnet
+$ cd mxnet
+$ make -j $(nproc) USE_OPENCV=1 USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
+$ sudo make rpkg
+$ sudo R CMD INSTALL mxnet_current_r.tar.gz
+```
+
+## Install PyTorch
+```
+sudo pip install http://download.pytorch.org/whl/cu80/torch-0.1.12.post2-cp27-none-linux_x86_64.whl 
+sudo pip install torchvision
+```
+
+## Install GpuStat
+```
+$ sudo pip install gpustat
+```
+
+
