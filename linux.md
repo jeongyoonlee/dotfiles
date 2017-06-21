@@ -39,3 +39,12 @@ fi
 ```
 * Open a SSH connection from `clmac1` to `claws1`.
 * Open a SSH connection from `claws1` to `localhost` with the port for forwarding, 65432.
+
+# Recording and Replaying a Terminal
+```
+$ script --timing=script.tsp script.log
+Script started, file is script.log
+...
+$ exit
+$ scriptreplay --timing=script.tsp script.log
+```
