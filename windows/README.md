@@ -1,4 +1,4 @@
-# Machine Learning Development Environment Setup for Windows 10
+# ML Development Environment Setup for Windows
 
 ## Using Bash on Windows Subsystem for Linux (WSL)
 Bash on WSL allows using Ubuntu on Windows without virtual machine. For details, check out [introduction page](https://msdn.microsoft.com/en-us/commandline/wsl/about).
