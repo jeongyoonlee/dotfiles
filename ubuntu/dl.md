@@ -74,7 +74,7 @@ Note that it puts `cv2.so` in `/usr/local/python/2.7/` instead of `/usr/local/li
 ```
 export PYTHONPATH=$PYTHONPATH:.:/usr/local/lib/python2.7/site-packages
 ```
-## Install TensorFlow
+## Install TensorFlow with GPU
 ```
 $ sudo pip install -U tensorflow-gpu
 ```
@@ -82,7 +82,9 @@ $ sudo pip install -U tensorflow-gpu
 ## Install Keras
 For Python:
 ```
-$ sudo pip install keras
+$ git clone https://github.com/fchollet/keras.git
+$ cd keras
+$ sudo python setup.py install
 ```
 
 For R:
