@@ -71,9 +71,9 @@ To change the Keras backend, edit `backend` in `%USERPROFILE%/.keras/keras/json`
 ```
 {
     "floatx": "float32",
-	"image_data_format": "channels_last",
-	"epsilon": 1e-07,
-	"backend": "cntk"	# or "tensorflow"/"theano"
+    "image_data_format": "channels_last",
+    "epsilon": 1e-07,
+    "backend": "cntk"			# or "tensorflow"/"theano"
 }
 ```
 
