@@ -22,7 +22,7 @@ Cuda compilation tools, release 8.0, V8.0.60
 
 ### Install cuDNN 5.1
 * Download cuDNN from https://developer.nvidia.com/cudnn. You need to sign up for membership if you haven't.
-* Extract the archive and copy files to `$CUDA_PATH` (e.g. `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0`)
+* Extract the archive and copy files to `%CUDA_PATH%` (e.g. `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0`)
 
 ### Download and install Python 3.5.2
 TensorFlow supports only Python 3.5.x on Windows. You can download Python 3.5.2 at https://www.python.org/downloads/release/python-352/.
