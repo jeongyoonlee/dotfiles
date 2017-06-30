@@ -2,6 +2,9 @@
 
 ## Using Native Windows
 
+### Install Visual Studio
+Download and install Visual Stuido at https://www.visualstudio.com/.
+
 ### Install CUDA
 Check out the [CUDA installation guide for Windows](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/#axzz4VZnqTJ2A).
 * Download CUDA 8.0 toolkit from https://developer.nvidia.com/cuda-downloads.
@@ -115,6 +118,21 @@ Epoch 20/20
 60000/60000 [==============================] - 2s - loss: 0.0168 - acc: 0.9959 - val_loss: 0.1136 - val_acc: 0.9838
 Test loss: 0.113552630741
 Test accuracy: 0.9838
+```
+
+### Install LightGBM
+Download and install cmake at https://cmake.org/download/.
+
+Install LightGBM from GitHub:
+```
+> git clone --recursive https://github.com/Microsoft/LightGBM
+> cd LightGBM
+> mkdir build
+> cd build
+> cmake -DCMAKE_GENERATOR_PLATFORM=x64 ..
+> cmake --build . --target ALL_BUILD --config Release
+> cd ..python-package
+> python setup.py install
 ```
 
 ## Using Bash on Windows Subsystem for Linux (WSL)
