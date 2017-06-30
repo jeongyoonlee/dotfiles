@@ -47,7 +47,7 @@ Install TensorFlow with GPU
 > pip install -U tensorflow-gpu
 ```
 
-## Install CNTK with GPU
+### Install CNTK with GPU
 Find a right URL for your Python version and CPU at CNTK's [Setup Windows Python](https://docs.microsoft.com/en-us/cognitive-toolkit/setup-windows-python) page.
 ```
 > pip install <url>
@@ -130,3 +130,7 @@ Run [setup-wsl.sh](setup-wsl.sh).
 ```
 $ sudo bash setup-wsl.sh
 ```
+
+## Using Anaconda
+If you don't need to try out latest versions of ML packages and tools, this is easiest way to get started.
+Download and install Anaconda at https://www.continuum.io/downloads.
