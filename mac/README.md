@@ -73,5 +73,6 @@ $ make install
 ```
 
 ## Using Anaconda
-If you don't need to try out latest versions of ML packages and tools, this is easiest way to get started.
+If you don't need latest versions of ML packages and tools, this is easiest way to get started.
+
 Download and install Anaconda at https://www.continuum.io/downloads.
