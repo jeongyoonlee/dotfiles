@@ -43,3 +43,12 @@ $ sudo chown -R <username> /anaconda
 $ source /anaconda/bin/activate root	# for python 2.7
 $ source /anaconda/bin/activate py35	# for python 3.5
 ```
+* Upgrade pip packages with [requirements.txt](./reauirements.txt) and CNTK installation URL at [Setup Linux Python](https://docs.microsoft.com/en-us/cognitive-toolkit/Setup-Linux-Python)
+```bash
+$ pip install -r requirements.txt
+$ pip install -U --no-deps https://cntk.ai/PythonWheel/GPU/cntk-2.0-cp35-cp35m-linux_x86_64.whl
+```
+* Install PyTorch using conda
+```bash
+$ conda install pytorch torchvision cuda80 -c soumith
+```
