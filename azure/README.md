@@ -28,6 +28,23 @@ $ az account list
 $ az account set --subscription "name of the preferred subscription"
 ```
 
+### AzCopy
+From [AzCopy on Linux](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy-linux):
+AzCopy on Linux is a command-line utility designed for copying data to and from Microsoft Azure Blob and File storage using simple commands with optimal performance.
+* Install .NET Core.
+```bash
+sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ yakkety main" > /etc/apt/sources.list.d/dotnetdev.list' 
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
+sudo apt-get update
+sudo apt-get install dotnet-dev-1.0.3
+```
+* Download and install AzCopy.
+```bash
+wget -O azcopy.tar.gz https://aka.ms/downloadazcopyprlinux
+tar -xf azcopy.tar.gz
+sudo ./install.sh
+```
+
 ## Virtual Machine
 There are two types of GPU VMs on Azure: NV with M60 and NC with K80. M60 is faster (see [DL Benchmarks between P100, K80 and M40](https://www.microway.com/hpc-tech-tips/deep-learning-benchmarks-nvidia-tesla-p100-16gb-pcie-tesla-k80-tesla-m40-gpus/).
 
