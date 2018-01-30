@@ -69,3 +69,11 @@ $ pip install -U --no-deps https://cntk.ai/PythonWheel/GPU/cntk-2.0-cp35-cp35m-l
 ```bash
 $ conda install pytorch torchvision cuda80 -c soumith
 ```
+
+### Azure ML Workbench
+* Configuring a remote docker
+```bash
+$ az ml computetarget attach remotedocker --name "remotevm" --address "remotevm_IP_address" --username "sshuser" -K
+$ az ml experiment prepare -c remotevm
+$ az ml experiment submit --run-configuration remotevm iris_sklearn.py 0.1
+```
