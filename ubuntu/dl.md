@@ -57,6 +57,7 @@ $ sudo apt install libcupti-dev
 ```
 
 ## Install python3.6 on ubuntu 16.04
+* You need to have python3.5 installed. 
 Instructions to install python3.6 using PPA [reference link](https://askubuntu.com/questions/865554/how-do-i-install-python-3-6-using-apt-get)
   ```
   $ sudo add-apt-repository ppa:deadsnakes/ppa
