@@ -56,6 +56,27 @@ $ sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
 $ sudo apt install libcupti-dev
 ```
 
+## Install python3.6 on ubuntu 16.04
+Instructions to install python3.6 using PPA [reference link](https://askubuntu.com/questions/865554/how-do-i-install-python-3-6-using-apt-get)
+  ```
+  $ sudo add-apt-repository ppa:deadsnakes/ppa
+  $ sudo apt-get update
+  $ sudo apt-get install python3.6
+  ```
+  * Start virtual-env if you are using other versions as well `$ virtualenv -p /usr/bin/python3.6 my_venv_python36`
+* Once you run `sudo apt-get update`, you may need to re-install your NVIDIA drivers and CUDA.
+  * you can check the status by `$ nvidia-smi`
+* To re-install NVIDIA Drivers and CUDA remove already installed cuda completely [reference link](https://askubuntu.com/questions/206283/how-can-i-uninstall-a-nvidia-driver-completely)
+  ```
+  $ sudo /usr/local/cuda-X.Y/bin/uninstall_cuda_X.Y.pl
+  $ sudo apt-get --purge remove cuda-X.Y
+  $ sudo apt-get install ubuntu-desktop
+  $ sudo apt-get purge nvidia-*
+  $ sudo apt autoremove
+  ```
+  * make sure no folders are left behind: `$ ls /usr/local/cuda-X.Y`
+* Follow the instructions [above](https://github.com/jeongyoonlee/dotfiles/blob/master/ubuntu/dl.md) to re-install drivers. 
+
 ## Install OpenCV2
 From http://leoybkim.com/wiki/installing-opencv-2.4.13-on-ubunto-16.04/
 ```
