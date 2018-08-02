@@ -30,7 +30,9 @@ $ az account set --subscription "name of the preferred subscription"
 ### AzCopy
 From [AzCopy on Linux](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy-linux):
 AzCopy on Linux is a command-line utility designed for copying data to and from Microsoft Azure Blob and File storage using simple commands with optimal performance.
+
 * Install .NET Core.
+
 :exclamation: Starting in AzCopy 7.2 version, the .NET Core dependencies are packaged with the AzCopy package. If you use 7.2 version or later, you no longer need to install .NET Core as a pre-requisite.
 ```bash
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
