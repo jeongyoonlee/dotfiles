@@ -31,6 +31,7 @@ $ az account set --subscription "name of the preferred subscription"
 From [AzCopy on Linux](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy-linux):
 AzCopy on Linux is a command-line utility designed for copying data to and from Microsoft Azure Blob and File storage using simple commands with optimal performance.
 * Install .NET Core.
+:exclamation: Starting in AzCopy 7.2 version, the .NET Core dependencies are packaged with the AzCopy package. If you use 7.2 version or later, you no longer need to install .NET Core as a pre-requisite.
 ```bash
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
@@ -40,7 +41,7 @@ sudo apt-get install dotnet-sdk-2.0.2
 ```
 * Download and install AzCopy.
 ```bash
-wget -O azcopy.tar.gz https://aka.ms/downloadazcopyprlinux
+wget -O azcopy.tar.gz https://aka.ms/downloadazcopylinux64
 tar -xf azcopy.tar.gz
 sudo ./install.sh
 ```
