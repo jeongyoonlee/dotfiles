@@ -48,8 +48,14 @@ tar -xf azcopy.tar.gz
 sudo ./install.sh
 ```
 
+## Docker
+```bash
+# add user to the docker group to avoid permission errors (https://docs.docker.com/install/linux/linux-postinstall/)
+$ sudo usermod -aG docker $USER
+```
+
 ## Virtual Machine
-There are two types of GPU VMs on Azure: NV with M60 and NC with K80. M60 is faster (see [DL Benchmarks between P100, K80 and M40](https://www.microway.com/hpc-tech-tips/deep-learning-benchmarks-nvidia-tesla-p100-16gb-pcie-tesla-k80-tesla-m40-gpus/).
+There are three types of GPU VMs on Azure: ND with P40, NV with M60 and NC with K80. P40 and M60 are faster than K80 (see [DL Benchmarks between P100, K80 and M40](https://www.microway.com/hpc-tech-tips/deep-learning-benchmarks-nvidia-tesla-p100-16gb-pcie-tesla-k80-tesla-m40-gpus/).
 
 ### Data Science Virtual Machine for Ubuntu
 See [Provision DS VM for Ubuntu](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/machine-learning/machine-learning-data-science-dsvm-ubuntu-intro.md)
