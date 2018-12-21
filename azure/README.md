@@ -6,6 +6,22 @@ If you haven't, you need to create a storage account and Azure file share on the
 * Launch Cloud Shell from the top navigation of the [Azure portal](https://ms.portal.azure.com).
 * Choose the subscription you want to use and create a storage account.
 
+## Azure ML Services
+Easiest way to setup Azure ML services and dependencies is using the AutoML setup script from [Azure Machine Learning service sample notebooks](https://github.com/Azure/MachineLearningNotebooks.git):
+```
+$ git clone https://github.com/Azure/MachineLearningNotebooks.git
+$ cd MachineLearningNotebooks/how-to-use-azureml/automated-machine-learning/
+# for Linux
+$ bash automl_setup_linux.sh
+# for Windows
+$ automl_setup
+# for Mac
+$ bash automl_setup_mac.sh
+## run the configuration notebook as directed.
+$ conda activate azure_automl
+```
+
+
 ### Azure CLI
 From [Get Started with Azure CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli):
 
