@@ -107,9 +107,3 @@ proml
 
 export PYTHONPATH=$PYTHONPATH:.
 export EDITOR="vim"
-export CUDA_ROOT=/usr/local/cuda
-export CUDA_BIN=$CUDA_ROOT/bin
-export CUDA_LIB=$CUDA_ROOT/lib64
-
-export PATH=$CUDA_BIN:$PATH
-export LD_LIBRARY_PATH=$CUDA_LIB:$LD_LIBRARY_PATH
