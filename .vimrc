@@ -20,6 +20,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'mechatroner/rainbow_csv'
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 Bundle 'Valloric/YouCompleteMe'
