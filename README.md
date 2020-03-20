@@ -1,7 +1,6 @@
 # Dotfiles and Setup Scripts
 * [.bashrc](.bashrc): Bash shell configuration with a colored prompot showing the current git version
 * [.vimrc](.vimrc): Simple VIM configuration
-* [.vimrc_python`](.vimrc_python): VIM configuration for Python
 * [.tmux.conf](.tmux.conf): tmux configuration
 
 ## For Ubuntu
