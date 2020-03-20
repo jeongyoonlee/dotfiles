@@ -4,10 +4,8 @@
 
 ### From a remote server
 ```bash
-# Install Jupyter Notebook
-$ pip install jupyter
-# Install Jupyter Notebook extensions
-$ pip install jupyter_contrib_nbextensions
+# Install Jupyter Notebook & extensions
+$ pip install jupyter jupyter_contrib_nbextensions
 $ jupyter nbextensions_configurator enable --user
 or
 $ conda install -c conda-forge jupyter_contrib_nbextensions
