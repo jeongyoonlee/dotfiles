@@ -12,8 +12,7 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 * Install Python using brew
 ```
 $ brew update
-$ brew install python
-$ brew install git
+$ brew install cmake python git macvim
 ```
 
 ### Install Python packages
