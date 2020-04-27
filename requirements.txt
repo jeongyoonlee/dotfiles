@@ -3,5 +3,8 @@ pandas
 scikit-learn
 matplotlib
 seaborn
+kaggle
 kaggler
 tqdm
+tensorflow
+keras
