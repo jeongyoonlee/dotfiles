@@ -64,3 +64,11 @@ $ jupyter notebook --no-browser --port 12345
 $ ssh -N -f -L localhost:12345:localhost:12345 username@remote_server
 ```
 Then open the browser on the local machine and go to localhost:12345
+
+### Troubleshooting
+
+#### channel 2: open failed: administratively prohibited: open failed
+
+1. check if you have `127.0.0.1 localhost` in `/etc/hosts/`
+2. check if `AllowTcpForwarding` is set to `yes`
+3. check if `PermitOpen` is set to `any`
