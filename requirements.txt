@@ -6,5 +6,6 @@ seaborn
 kaggle
 kaggler
 tqdm
+ipython
 tensorflow
 keras
