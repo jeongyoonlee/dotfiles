@@ -1,5 +1,23 @@
 # Setup for ML Development on Windows
 
+## Using Bash on Windows Subsystem for Linux 2 (WSL2)
+Bash on WSL allows to use Ubuntu on Windows without virtual machine. For details, check out [introduction page](https://msdn.microsoft.com/en-us/commandline/wsl/about).
+
+### Install WSL and update to WSL2
+Follow [installation guide](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide) on MSDN.
+
+### Install the latest Windows build from the Windows Insider Program
+Follow [getting started with Windows Insider Program](https://insider.windows.com/en-us/getting-started#install) guide to install the build version 20145 or higher.
+
+### Install CUDA on WSL2
+Follow the [CUDA on WSL](https://docs.nvidia.com/cuda/wsl-user-guide/index.html#installing-wip) guide.
+
+### Run the Setup Script for WSL
+Run [setup-wsl.sh](setup-wsl.sh).
+```
+$ sudo bash setup-wsl.sh
+```
+
 ## Using Native Windows
 
 ### Install Visual Studio
@@ -48,12 +66,6 @@ Upgrade `pip`
 Install TensorFlow with GPU
 ```
 > pip install -U tensorflow-gpu
-```
-
-### Install CNTK with GPU
-Find a right URL for your Python version and CPU at CNTK's [Setup Windows Python](https://docs.microsoft.com/en-us/cognitive-toolkit/setup-windows-python) page.
-```
-> pip install <url>
 ```
 
 ### Install Keras
@@ -135,19 +147,6 @@ Install LightGBM from GitHub:
 > python setup.py install
 ```
 
-## Using Bash on Windows Subsystem for Linux (WSL)
-Bash on WSL allows to use Ubuntu on Windows without virtual machine. For details, check out [introduction page](https://msdn.microsoft.com/en-us/commandline/wsl/about).
-
-:warning: On WSL, you cannot access GPU. If you need GPU (e.g. for Deep Learning), see [Using Native Windows](#using-native-windows).
-
-### Install Bash on WSL
-Follow [installation guide](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide) on MSDN.
-
-### Run the Setup Script for WSL
-Run [setup-wsl.sh](setup-wsl.sh).
-```
-$ sudo bash setup-wsl.sh
-```
 
 ## Using Anaconda
 If you don't need latest versions of ML packages and tools, this is easiest way to get started.
