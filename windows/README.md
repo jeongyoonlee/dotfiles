@@ -12,6 +12,8 @@ Follow [getting started with Windows Insider Program](https://insider.windows.co
 ### Install CUDA on WSL2
 Follow the [CUDA on WSL](https://docs.nvidia.com/cuda/wsl-user-guide/index.html#installing-wip) guide.
 
+* Download the latest NVidia driver for WSL from [here](https://developer.nvidia.com/cuda/wsl)
+
 ### Run the Setup Script for WSL
 Run [setup-wsl.sh](setup-wsl.sh).
 ```
