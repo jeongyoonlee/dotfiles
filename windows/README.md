@@ -9,7 +9,7 @@ Follow [installation guide](https://msdn.microsoft.com/en-us/commandline/wsl/ins
 ### Install the latest Windows build from the Windows Insider Program
 Follow [getting started with Windows Insider Program](https://insider.windows.com/en-us/getting-started#install) guide to install the build version 20145 or higher.
 
-### Install CUDA on WSL2
+### Install CUDA 10.1 on WSL2
 Follow the [CUDA on WSL](https://docs.nvidia.com/cuda/wsl-user-guide/index.html#installing-wip) guide.
 
 * Download the latest NVidia driver for WSL from [here](https://developer.nvidia.com/cuda/wsl)
@@ -21,10 +21,16 @@ $ sudo apt-get update
 $ sudo apt-get install -y cuda-toolkit-10-1
 ```
 
-### Run the Setup Script for WSL
-Run [setup-wsl.sh](setup-wsl.sh).
+### Run NVidia Docker Container on WSL2
+Follow the [Setting up to Run Containers](https://docs.nvidia.com/cuda/wsl-user-guide/index.html#setting-containers) guide.
+
+:warning: If `libcublas.so.10` can't be found, install it as follows:
+```bash
+$ sudo apt-get install --reinstall libcublas10
 ```
-$ sudo bash setup-wsl.sh
+and add the following line to `~/.bashrc`:
+```
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda-10.2/lib64:/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
 ```
 
 ## Using Native Windows
