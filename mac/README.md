@@ -12,7 +12,7 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 * Install Python using brew
 ```
 $ brew update
-$ brew install cmake python git macvim
+$ brew install cmake python git macvim graphviz
 ```
 
 ### Install Python packages
@@ -29,6 +29,8 @@ $ pip install -U statsmodels
 $ pip install -U seaborn
 $ pip install -U joblib
 $ pip install -U h5py
+$ pip install -U kaggle
+$ pip install -U pydot
 ```
 
 ### Install XGBoost

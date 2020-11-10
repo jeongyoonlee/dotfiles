@@ -10,7 +10,7 @@ libatlas-dev libatlas3gf-base liblapack-dev
 
 # for vowpal wabbit
 sudo apt -y install libboost-program-options-dev libboost-python-dev
-sudo apt -y install zlib1g-dev libxml2-dev libjpeg-dev
+sudo apt -y install zlib1g-dev libxml2-dev libjpeg-dev graphviz
 
 # setup ipython notebook
 sudo pip install -U pip
@@ -35,7 +35,8 @@ sudo pip install -U xlrd
 sudo pip install -U cython
 sudo pip install -U joblib
 sudo pip install -U seaborn
-sudo pip install -U kaggle-cli
+sudo pip install -U kaggle
+sudo pip install -U pydot
 
 # for R
 # add deb http://cran.stat.ucla.edu/bin/linux/ubuntu trusty/ to /etc/apt/sources.list

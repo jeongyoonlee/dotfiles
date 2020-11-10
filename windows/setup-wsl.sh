@@ -12,6 +12,7 @@ libatlas-dev liblapack-dev
 # for vowpal wabbit
 sudo apt -y install libboost-program-options-dev libboost-python-dev
 sudo apt -y install zlib1g-dev libxml2-dev libjpeg-dev
+sudo apt -y install graphviz
 
 # install python packages
 sudo pip install -U pip
@@ -30,7 +31,7 @@ sudo pip install -U xlrd
 sudo pip install -U cython
 sudo pip install -U joblib
 sudo pip install -U seaborn
-sudo pip install -U kaggle-cli
+sudo pip install -U kaggle
 
 # VW installation fails due to missing jni.h
 #cd ~/tools
