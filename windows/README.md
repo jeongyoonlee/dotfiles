@@ -1,5 +1,10 @@
 # Setup for ML Development on Windows
 
+## Set up Windows Terminal
+* Install Windows Terminal with the [Install Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/get-started) guide
+* Install the Casadia Code PL font with the [Installing-Cascadia-Code](https://github.com/microsoft/cascadia-code/wiki/Installing-Cascadia-Code) guide
+* Set up the Powerline for Windows Terminal and VS Code with the [Set up Powerline in Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup) tutorial
+
 ## Using Bash on Windows Subsystem for Linux 2 (WSL2)
 Bash on WSL allows to use Ubuntu on Windows without virtual machine. For details, check out [introduction page](https://msdn.microsoft.com/en-us/commandline/wsl/about).
 
