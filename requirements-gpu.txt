@@ -6,7 +6,7 @@ seaborn
 kaggle
 kaggler
 tqdm
-tensorflow-gpu==1.15.2
+tensorflow-gpu==2.3.1
 keras==2.2.5
 gpustat
 yapf
