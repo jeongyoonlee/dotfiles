@@ -38,6 +38,9 @@ and add the following line to `~/.bashrc`:
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda-10.2/lib64:/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
 ```
 
+### Monitor GPU Usage
+:warning: WSL doesn't support `nvida-smi`. You can check the GPU usage from Task Manager > Performance > GPU instead.
+
 ## Using Native Windows
 
 ### Install Visual Studio
