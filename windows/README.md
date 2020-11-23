@@ -1,5 +1,7 @@
 # Setup for ML Development on Windows
 
+As of 11/2020, I recommend two options: (1) using WSL2 or (2) using native Windows with Git bash. WSL2 provides **almost** seamless experience similar to native Linux, but might have an issue with VPN. If you don't need the full VPN connection, it can be a great choice. However, if you need VPN, and face an issue with WSL2, you can use native Windows with Git bash.
+
 ## Set up Windows Terminal
 * Install Windows Terminal with the [Install Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/get-started) guide
 * Install the Casadia Code PL font with the [Installing-Cascadia-Code](https://github.com/microsoft/cascadia-code/wiki/Installing-Cascadia-Code) guide
@@ -48,3 +50,6 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda-10.2/lib64:/usr/loc
 ```
 $ code .
 ```
+
+## Using Native Windows with Git Bash
+
