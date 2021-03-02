@@ -1,3 +1,16 @@
+# TensorBoard
+
+## Sync TensorBoard logs from a Remote Server
+
+### macOS
+```bash
+# Mount the remote log dir
+$ sshfs username@remote_server:/tensorboard-logs-path/ ./logs
+$ tensorboard --logdir logs
+# To unmount the log dir
+$ umount ./logs
+```
+
 # Jupyter Notebook
 
 ## Jupyter Notebook on a Remote Server
