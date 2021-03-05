@@ -81,6 +81,9 @@ $ pip install ipykernel
 $ python -m ipykernel install --user --name tf2.4 --display-name "Python 3.7 (TF2.4)"    
 ```
 
+### Using the NVidia docker image
+Follow the instruction from the Tensorflow website [here](https://www.tensorflow.org/install/docker)
+
 ## Jupyter Notebook on a Remote Server
 
 ### From a remote server
