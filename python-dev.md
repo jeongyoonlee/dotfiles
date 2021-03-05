@@ -43,6 +43,44 @@ $ source py37/bin/activate
 (py37) $ deactivate
 ```
 
+## Setup CUDA/cuDNN for GPU
+The easiest way to set up the CUDA/cuDNN environment for GPU is either using the NVidia docker or `conda` environment.
+
+### Using `conda`
+
+1. Create an `environment.yml`
+```
+name: tf2.4 
+
+channels:  
+  - nvidia
+  - conda-forge
+  - defaults
+  - pytorch
+  
+dependencies:  
+  - cudatoolkit=11.0.221
+  - cudnn=8.0.4
+  - pip=20.0
+  - python=3.7
+  - jupyterlab
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pip:
+    - tensorflow-gpu==2.4.1
+```
+2. Create a `conda` virtual environment
+```bash
+$ conda env create
+```
+3. Add the environment to the Jupyter notebook
+```bash
+$ conda activate tf2.4
+$ pip install ipykernel
+$ python -m ipykernel install --user --name tf2.4 --display-name "Python 3.7 (TF2.4)"    
+```
+
 ## Jupyter Notebook on a Remote Server
 
 ### From a remote server
