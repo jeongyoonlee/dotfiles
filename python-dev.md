@@ -84,6 +84,10 @@ $ python -m ipykernel install --user --name tf2.4 --display-name "Python 3.7 (TF
 ### Using the NVidia docker image
 Follow the instruction from the Tensorflow website [here](https://www.tensorflow.org/install/docker)
 
+### Troubleshooting
+
+1. Could not load dynamic library `libcusolver.so.11` with `cudatoolkit=11.0`: create a symlink from an existing `libcusolver.so.XX` to `libcusolver.so.11`. If you used `conda` to create a TF + CUDA + cuDNN environment, CUDA libraries are in `[conda install path]/envs/[environment name]/lib` instead of `/usr/lib/cuda/lib64/`.
+
 ## Jupyter Notebook on a Remote Server
 
 ### From a remote server

@@ -1,0 +1,26 @@
+name: tf2.5
+
+channels:
+    - nvidia
+    - conda-forge
+    - defaults
+    - pytorch
+
+dependencies:
+    - cudatoolkit=11.0.221
+    - cudnn=8.0.4
+    - pip=20.0
+    - python=3.7
+    - jupyterlab
+    - pytorch
+    - torchvision
+    - torchaudio
+    - pip:
+        - tf-nightly-gpu
+        - matplotlib
+        - pandas
+        - seaborn
+        - scikit-learn
+        - tqdm
+        - tables
+        - ipywidgets
