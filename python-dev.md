@@ -80,6 +80,14 @@ $ conda activate tf2.4
 $ pip install ipykernel
 $ python -m ipykernel install --user --name tf2.4 --display-name "Python 3.7 (TF2.4)"    
 ```
+4. If you want to remove the Jupyter notebook kernel:
+```bash
+# List all kernels and grap the name of the kernel you want to remove
+$ jupyter kernelspec list
+# Remove it
+$ jupyter kernelspec remove <kernel_name>
+
+```
 
 ### Using the NVidia docker image
 Follow the instruction from the Tensorflow website [here](https://www.tensorflow.org/install/docker)
