@@ -1,4 +1,4 @@
-name: tf2.5
+name: kaggle
 
 channels:
     - nvidia
@@ -15,8 +15,9 @@ dependencies:
     - pytorch
     - torchvision
     - torchaudio
+    - pytables
     - pip:
-        - tensorflow==2.5
+        - tensorflow==2.4
         - matplotlib
         - pandas
         - seaborn
@@ -24,4 +25,5 @@ dependencies:
         - tqdm
         - tables
         - ipywidgets
+        - kaggler
         - gpustat
