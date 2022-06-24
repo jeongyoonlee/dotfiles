@@ -8,6 +8,14 @@ $ [sudo] apt install tmux htop
 ```
 
 ### Setup dotfiles
+
+#### Zsh
+Install [oh-my-zsh](https://ohmyz.sh/)
+```bash
+$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+#### Bash
 Copy [.bashrc](.bashrc) and [.vimrc](.vimrc) to the home directory.
 ```bash
 $ cp dotfiles/.bashrc ~/
@@ -22,13 +30,13 @@ Always work on virtual environment so that, when you install or update packages,
 ```bash
 # Install miniconda. Instruction is available at https://conda.io/projects/conda/en/latest/user-guide/install/index.html
 # Create a new virtual environment
-$ conda create -n py37 python=3.7
+$ conda create -n py38 python=3.8
 # Activate the virtual environment
-$ conda activate py37
-(py37) $ pip install -U [packages to install]
+$ conda activate py38
+(py38) $ pip install -U [packages to install]
 ...
 # Deactivate the virtual environment
-(py37) $ deactivate
+(py38) $ deactivate
 ```
 
 #### Using `virtualenv`
@@ -36,13 +44,13 @@ $ conda activate py37
 # Install virtualenv using pip if needed
 $ [sudo] pip install -U virtualenv
 # Create a new virtual environment
-$ virtualenv --python=[path to Python binary. e.g. /usr/bin/python3.7] py37
+$ virtualenv --python=[path to Python binary. e.g. /usr/bin/python3.8] py38
 # Activate the virtual environment
-$ source py37/bin/activate
-(py37) $ pip install -U [packages to install]
+$ source py38/bin/activate
+(py38) $ pip install -U [packages to install]
 ..
 # Deactivate the virtual environment
-(py37) $ deactivate
+(py38) $ deactivate
 ```
 
 ### Setup CUDA/cuDNN for GPU
