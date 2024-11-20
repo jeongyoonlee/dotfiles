@@ -138,6 +138,8 @@ Then open the browser on the local machine and go to localhost:12345
 
 ## Coding Style Guidelines
 
+The guidelines below have been collected from various sources over time. If you find the original sources, please add the citations. The most popular Python style guidelines are [PEP-8](https://peps.python.org/pep-0008/) and [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html).
+
 Use the [`black`](https://black.readthedocs.io/en/stable/index.html) Python formatter for [PEP-8](https://peps.python.org/pep-0008/) compliance.
 
 To add black to your IDE for autoformatting, follow the instruction in `black`'s [Editor integration page](https://black.readthedocs.io/en/stable/integrations/editors.html).
